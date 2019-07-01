@@ -1,0 +1,18 @@
+#post {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  max-width: 50rem;
+}
+
+#post-title-row {
+  margin-bottom: 1rem;
+}
+
+#post-title {
+  margin-top: 3rem;
+}
+
+#blog-link {
+  margin-top: 0.3rem;
+}

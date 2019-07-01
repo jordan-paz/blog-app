@@ -1,0 +1,9 @@
+.App {
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+}
+
+#theme-toggle {
+  float: right;
+  margin-top: 0.7rem;
+}

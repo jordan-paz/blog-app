@@ -1,0 +1,22 @@
+#blog {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  max-width: 50rem;
+}
+
+#blog-title-row {
+  margin-bottom: 1rem;
+}
+
+#blog-title {
+  margin-bottom: 0.5rem;
+}
+
+#intro {
+  margin-bottom: 2.5rem;
+}
+
+#new-post-button {
+  margin-top: 2rem;
+}

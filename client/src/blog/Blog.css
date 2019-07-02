@@ -10,13 +10,18 @@
 }
 
 #blog-title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
 }
 
 #intro {
+  border: 1px solid;
+  border-color: #ff9999;
+  border-radius: 4px;
+  padding: 1rem;
   margin-bottom: 2.5rem;
 }
 
 #new-post-button {
-  margin-top: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }

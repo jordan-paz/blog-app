@@ -10,9 +10,13 @@
 }
 
 #post-title {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 #blog-link {
-  margin-top: 0.3rem;
+  margin-top: 1.1rem;
+}
+
+#post-text {
+  margin-top: 2rem;
 }

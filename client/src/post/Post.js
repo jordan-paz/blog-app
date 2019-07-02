@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Moment from "react-moment";
 import { Container, Row, Button, Col } from "react-bootstrap";
 import "./Post.css";
 
@@ -44,8 +45,18 @@ const Post = ({ match: { params }, loggedIn, themeState }) => {
           <h1 id="post-title">{post.title}</h1>
         </Col>
       </Row>
-
-      <p id="post-text">{post.text}</p>
+      <Row>
+        <Col>
+          <Moment className="info-text" format="MMM DD, YYYY">
+            {post.date}
+          </Moment>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <p id="post-text">{post.text}</p>
+        </Col>
+      </Row>
     </Container>
   );
 };

@@ -1,5 +1,5 @@
 .post-thumbnail {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .edit-post-button-container {
@@ -10,6 +10,10 @@
   float: right;
 }
 
+.post-thumbnail-title {
+  margin-bottom: 0.2rem;
+}
+
 .post-thumbnail-text {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
 }

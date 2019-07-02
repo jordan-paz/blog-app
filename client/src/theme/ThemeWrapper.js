@@ -3,14 +3,14 @@ import styled from "@emotion/styled";
 const Wrapper = styled("div")`
   transition: 0.3s ease;
   background: ${props => props.theme.background};
+  height: 100%;
   width: 100vw;
-  height: 100vh;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
 
   h1 {
     font-family: "DM Serif Display", serif;
-    font-size: 3.5rem;
+    font-size: 3.23rem;
     color: ${props => props.theme.titleColor};
   }
 
@@ -24,12 +24,8 @@ const Wrapper = styled("div")`
     color: ${props => props.theme.textColor};
   }
 
-  .post-thumbnail-text {
-    font-size: 1rem;
-  }
-
   .info-text {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     color: ${props => props.theme.infoTextColor};
   }
   a {
@@ -38,6 +34,9 @@ const Wrapper = styled("div")`
 
   #blog-link {
     color: ${props => props.theme.infoTextColor};
+    font-size: 1.8rem;
+    text-decoration: underline;
+    text-decoration-color: ${props => props.theme.oppositeBackground};
   }
 
   #post-text {
@@ -45,7 +44,16 @@ const Wrapper = styled("div")`
   }
 
   #post-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
+  }
+
+  .post-thumbnail-title {
+    text-decoration: underline;
+  }
+
+  .post-thumbnail-title:hover {
+    color: #ff9999;
+    text-decoration-color: #ffffff;
   }
 
   button {

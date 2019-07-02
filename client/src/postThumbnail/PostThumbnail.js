@@ -9,6 +9,7 @@ const PostThumbnail = ({
   loggedIn,
   theme
 }) => {
+  const trimmedText = text.slice(0, 150) + "...";
   return (
     <Row className="post-thumbnail">
       <Col>
@@ -35,7 +36,7 @@ const PostThumbnail = ({
         </Row>
         <Row>
           <Col>
-            <p className="post-thumbnail-text">{text}</p>
+            <p className="post-thumbnail-text">{trimmedText}</p>
           </Col>
         </Row>
       </Col>

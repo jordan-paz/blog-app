@@ -20,11 +20,11 @@ const Blog = ({ loggedIn, themeState }) => {
   return (
     <Container id="blog">
       <Row id="blog-title-row">
-        <Col xs={9}>
+        <Col xs={8}>
           <h1 id="blog-title">Dev de Paz</h1>
           <p className="info-text">A personal blog by Jordan Paz</p>
         </Col>
-        <Col xs={3} id="theme-button-container">
+        <Col xs={4} id="theme-button-container">
           <Button
             id="theme-toggle"
             variant="dark"

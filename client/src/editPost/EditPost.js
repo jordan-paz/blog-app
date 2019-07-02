@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Redirect } from "react-router-dom";
 import axios from "axios";
+import { Form, Button, Container } from "react-bootstrap";
+import "./EditPost.css";
 
 const EditPost = ({ match: { params } }) => {
   const [goToPost, setGoToPost] = useState(false);
@@ -63,26 +65,39 @@ const EditPost = ({ match: { params } }) => {
       ) : goToBlog ? (
         <Redirect to="/" />
       ) : (
-        <form onSubmit={e => onSubmit(e)}>
-          <input
-            type="text"
-            placeholder="Blog Title"
-            value={title}
-            name="title"
-            onChange={e => setTitle(e.target.value)}
-          />
-          <input
-            type="text"
-            placeholder="Text"
-            value={text}
-            name="text"
-            onChange={e => setText(e.target.value)}
-          />
-          <button type="submit">Submit</button>
-          <button type="button" onClick={() => deletePost(params.postId)}>
-            Delete
-          </button>
-        </form>
+        <Container id="edit-post-form">
+          <h1>Edit Post</h1>
+          <Form onSubmit={e => onSubmit(e)}>
+            <Form.Group>
+              <Form.Control
+                type="text"
+                placeholder="Blog Title"
+                value={title}
+                name="title"
+                onChange={e => setTitle(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group>
+              <Form.Control
+                as="textarea"
+                rows="10"
+                placeholder="Text"
+                value={text}
+                name="text"
+                onChange={e => setText(e.target.value)}
+              />
+            </Form.Group>
+
+            <Button type="submit">Submit</Button>
+            <Button
+              type="button"
+              id=""
+              onClick={() => deletePost(params.postId)}
+            >
+              Delete
+            </Button>
+          </Form>
+        </Container>
       )}
     </div>
   );

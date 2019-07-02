@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
 import axios from "axios";
+import { Form, Button, Container } from "react-bootstrap";
+import "./CreatePost.css";
 
 const CreatePost = props => {
   const [goHome, setGoHome] = useState(false);
@@ -32,23 +34,33 @@ const CreatePost = props => {
       {goHome ? (
         <Redirect to="/" />
       ) : (
-        <form onSubmit={e => onSubmit(e)}>
-          <input
-            type="text"
-            placeholder="Blog Title"
-            value={title}
-            name="title"
-            onChange={e => setTitle(e.target.value)}
-          />
-          <input
-            type="text"
-            placeholder="Text"
-            value={text}
-            name="text"
-            onChange={e => setText(e.target.value)}
-          />
-          <button type="submit">Submit</button>
-        </form>
+        <Container id="new-post-form">
+          <h1>New Post</h1>
+          <Form onSubmit={e => onSubmit(e)}>
+            <Form.Group>
+              <Form.Control
+                type="text"
+                placeholder="Blog Title"
+                value={title}
+                name="title"
+                onChange={e => setTitle(e.target.value)}
+              />
+            </Form.Group>
+
+            <Form.Group>
+              <Form.Control
+                as="textarea"
+                rows="10"
+                placeholder="Text"
+                value={text}
+                name="text"
+                onChange={e => setText(e.target.value)}
+              />
+            </Form.Group>
+
+            <Button type="submit">Submit</Button>
+          </Form>
+        </Container>
       )}
     </div>
   );

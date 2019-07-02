@@ -1,10 +1,9 @@
 const white = "#FFFFFF";
-const black = "#000000";
-const salmon = "#ff5252";
-const offWhite = "#ffffde";
+const black = "#120000";
+const salmon = "#fc7268";
 
 const themeLight = {
-  background: offWhite,
+  background: white,
   textColor: black,
   titleColor: black,
   postTitleColor: black,
@@ -16,9 +15,9 @@ const themeDark = {
   background: black,
   textColor: white,
   titleColor: white,
-  postTitleColor: offWhite,
+  postTitleColor: white,
   infoTextColor: salmon,
-  oppositeBackground: offWhite
+  oppositeBackground: white
 };
 
 const theme = mode => (mode === "dark" ? themeDark : themeLight);

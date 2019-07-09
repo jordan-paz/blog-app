@@ -3,19 +3,21 @@ import styled from "@emotion/styled";
 const Wrapper = styled("div")`
   transition: 0.3s ease;
   background: ${props => props.theme.background};
-  height: 100%;
+  height: 110vh;
   width: 100vw;
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
 
+  body {
+    background: ${props => props.theme.background};
+  }
+
   h1 {
-    font-family: "DM Serif Display", serif;
     font-size: 3.23rem;
     color: ${props => props.theme.titleColor};
   }
 
   h2 {
-    font-family: "DM Serif Display", serif;
     font-size: 2.5rem;
     color: ${props => props.theme.titleColor};
   }

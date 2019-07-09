@@ -9,6 +9,7 @@ import setAuthToken from "./utils/setAuthToken";
 import "./App.css";
 import { useTheme } from "./theme/ThemeContext";
 import Wrapper from "./theme/ThemeWrapper";
+import { Global, css } from "@emotion/core";
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
